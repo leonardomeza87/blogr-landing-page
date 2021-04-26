@@ -30,17 +30,17 @@
   </head>
   <body>
     <section class="intro">
-      <div class="pattern-intro">
-        <img src="images/bg-pattern-intro.svg" alt="" />
+      <div class="start-pattern">
+        <img src="images/bg-pattern-intro.svg" alt="pattern" />
       </div>
       <header>
         <div class="logo">
           <img src="images/logo.svg" alt="logo" />
         </div>
-        <nav>
-          <ul class="menu hidden-menu">
-            <li>
-              <div class="nav-link" data-menu="0" id="link0">
+        <nav class="hidden-menuK">
+          <ul class="menu">
+            <li class="menu-item">
+              <div class="menu-link" data-menu="0" id="link0">
                 <h3 data-menu="0">Product</h3>
                 <span class="little-arrow" data-menu="0"></span>
               </div>
@@ -52,8 +52,8 @@
                 <li>Integrations</li>
               </ul>
             </li>
-            <li>
-              <div class="nav-link" data-menu="1" id="link1">
+            <li class="menu-item">
+              <div class="menu-link" data-menu="1" id="link1">
                 <h3 data-menu="1">Company</h3>
                 <span class="little-arrow" data-menu="1"></span>
               </div>
@@ -64,8 +64,8 @@
                 <li>Careers</li>
               </ul>
             </li>
-            <li>
-              <div class="nav-link" data-menu="2" id="link2">
+            <li class="menu-item">
+              <div class="menu-link" data-menu="2" id="link2">
                 <h3 data-menu="2">Connect</h3>
                 <span class="little-arrow" data-menu="2"></span>
               </div>
@@ -76,14 +76,14 @@
               </ul>
             </li>
             <li class="btn-container">
-              <button>Login</button>
-              <button class="btn-cta">Sign Up</button>
+              <button class="empty">Login</button>
+              <button class="cta">Sign Up</button>
             </li>
           </ul>
         </nav>
-        <button class="menu-btn">
-          <img src="images/icon-hamburger.svg" alt="hamburger" />
-          <img class="hidden" src="images/icon-close.svg" alt="hamburger" />
+        <button class="menu-buttons">
+          <img src="images/icon-hamburger.svg" alt="open menu" />
+          <img class="hidden" src="images/icon-close.svg" alt="close menu" />
         </button>
       </header>
 
@@ -91,9 +91,9 @@
         <h2>A modern publishing platform</h2>
         <p>Grow your audience and build your online brand</p>
       </div>
-      <div class="cta-btns">
-        <button>Start for Free</button>
-        <button class="btn-empty">Learn More</button>
+      <div class="cta-buttons">
+        <button class="cta">Start for Free</button>
+        <button class="empty">Learn More</button>
       </div>
     </section>
     <section class="content-1">
@@ -168,7 +168,7 @@
         <img src="images/logo.svg" alt="logo" />
       </div>
       <ul class="footer-menu">
-        <li>Product</li>
+        <li class="footer-menu-item">Product</li>
         <ul class="footer-sub-menu">
           <li>Overview</li>
           <li>Pricing</li>
@@ -179,7 +179,7 @@
       </ul>
 
       <ul class="footer-menu">
-        <li>Company</li>
+        <li class="footer-menu-item">Company</li>
         <ul class="footer-sub-menu">
           <li>About</li>
           <li>Team</li>
@@ -188,7 +188,7 @@
         </ul>
       </ul>
       <ul class="footer-menu">
-        <li>Connect</li>
+        <li class="footer-menu-item">Connect</li>
         <ul class="footer-sub-menu">
           <li>Contact</li>
           <li>Newsletter</li>

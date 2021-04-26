@@ -17,7 +17,7 @@
   --footer-text: hsl(240, 2%, 79%);
   --body-copy: hsl(207, 13%, 34%);
   --footer-bg: hsl(240, 10%, 16%);
-  --box-shadow: rgba(0, 0, 0, 0.3);
+  --box-shadow: rgba(0, 0, 0, 0.2);
 
   /* Gradient */
   --cta-button-light-red: hsl(13, 100%, 72%);
@@ -42,6 +42,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Intro */
+
 .intro {
   height: 600px;
   width: 100%;
@@ -50,7 +52,6 @@ body {
     var(--cta-button-light-red),
     var(--cta-button-red)
   );
-  /* background-color: blue; */
   border-radius: 0 0 0 100px;
   display: flex;
   flex-direction: column;
@@ -59,20 +60,23 @@ body {
   position: relative;
 }
 
-.pattern-intro {
+/* Pattern */
+
+.start-pattern {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
   border-radius: 0 0 0 100px;
 }
-
-.pattern-intro img {
+.start-pattern img {
   position: relative;
   top: -226px;
   left: -320px;
   height: 214%;
 }
+
+/* Header */
 
 header {
   width: 100%;
@@ -94,7 +98,7 @@ header {
   height: 70%;
 }
 
-.menu-btn {
+.menu-buttons {
   height: 48px;
   width: 48px;
   background: none;
@@ -112,17 +116,16 @@ nav {
   top: 126px;
   left: 0;
   width: 100%;
-
   padding: 0 24px 64px;
   overflow-x: hidden;
-
-  /* display: none; */
+  transition: transform 0.2s ease-in-out;
 }
+
+/* Menu */
 
 ul {
   list-style: none;
 }
-
 .menu {
   width: 100%;
   font-family: var(--overpass);
@@ -132,33 +135,30 @@ ul {
   border-radius: 6px;
   box-shadow: 0 16px 24px 0 var(--box-shadow);
   padding: 24px;
-  transition: transform 0.2s ease-in-out;
 }
-
 .hidden-menu {
   transform: translateX(100vw);
 }
-
-.menu li {
+.menu-item {
   width: 100%;
 }
 
-.nav-link {
+/* Menu Link */
+
+.menu-link {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-
-.nav-link h3 {
+.menu-link h3 {
   padding: 10px;
   margin-bottom: 8px;
   text-align: center;
   color: var(--headings);
-  transition: color 0.1s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
-
 .little-arrow {
   display: block;
   position: relative;
@@ -170,24 +170,18 @@ ul {
   border-right: 2px solid var(--cta-hover-bg);
   border-bottom: 2px solid var(--cta-hover-bg);
   transition-property: transform, top;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
-
-.nav-link.active h3 {
+.menu-link.active h3 {
   color: var(--headings-blue);
 }
-.nav-link.active .little-arrow {
+.menu-link.active .little-arrow {
   top: -5px;
   transform: rotate(-135deg);
 }
 
-.sub-menu {
-  background-color: var(--footer-text);
-  width: 100%;
-  display: none;
-  margin-bottom: 8px;
-}
+/* Sub menu*/
 
 .sub-menu {
   background-color: var(--sub-menu);
@@ -201,8 +195,8 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
 .sub-menu li {
+  width: 100%;
   padding: 12px;
   text-align: center;
   font-size: 16px;
@@ -210,8 +204,10 @@ ul {
   color: var(--headings-blue);
   cursor: pointer;
   border-radius: 4px;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
-
 .sub-menu li:hover {
   color: var(--headings);
   background-color: var(--white-text);
@@ -221,16 +217,17 @@ ul {
   display: none;
 }
 
+/* Menu BTN Container*/
+
 .btn-container {
   margin-top: 24px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dfdfdf;
   padding: 24px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .btn-container button {
   width: 138px;
   height: 46px;
@@ -245,12 +242,7 @@ ul {
   margin-bottom: 8px;
   cursor: pointer;
 }
-
-.btn-container button:hover {
-  border: 1px solid var(--cta-hover-bg);
-}
-
-.btn-container .btn-cta {
+.btn-container .cta {
   height: 48px;
   background: linear-gradient(
     to right,
@@ -260,11 +252,13 @@ ul {
   color: var(--white-text);
   font-family: var(--ubuntu);
   font-weight: 500;
+  transition: box-shadow 0.2s ease-in-out;
 }
-.btn-container .btn-cta:hover {
-  border: none;
-  color: var(--headings);
+.btn-container .cta:hover {
+  box-shadow: 0 6px 10px 0 var(--box-shadow);
 }
+
+/* Initial Text*/
 
 .initial-text {
   width: 90%;
@@ -277,7 +271,6 @@ ul {
   z-index: 100;
   cursor: default;
 }
-
 .initial-text h2 {
   font-size: 36px;
   font-family: var(--overpass);
@@ -286,7 +279,6 @@ ul {
   padding: 0 8px;
   font-weight: 600;
 }
-
 .initial-text p {
   margin-top: 16px;
   font-family: var(--overpass);
@@ -297,7 +289,9 @@ ul {
   letter-spacing: 1px;
 }
 
-.cta-btns {
+/* CTA Buttons*/
+
+.cta-buttons {
   padding-top: 8px;
   height: 50%;
   display: flex;
@@ -306,8 +300,7 @@ ul {
   position: relative;
   z-index: 100;
 }
-
-.cta-btns button {
+.cta-buttons button {
   width: 136px;
   height: 48px;
   border: none;
@@ -319,13 +312,28 @@ ul {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
-
-.cta-btns .btn-empty {
+.cta-buttons button:hover {
+  background-color: var(--cta-hover-bg);
+  color: var(--white-text);
+}
+.cta-buttons .empty {
   background-color: transparent;
   border: 1px solid var(--white-text);
   color: var(--white-text);
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
+.cta-buttons .empty:hover {
+  background-color: var(--white-text);
+  color: var(--cta-hover-bg);
+}
+
+/* Content 1 */
 
 .content-1 {
   width: 100%;
@@ -336,7 +344,6 @@ ul {
   justify-content: flex-start;
   align-items: center;
 }
-
 .content-1 h2 {
   font-size: 28px;
   color: var(--headings);
@@ -345,11 +352,9 @@ ul {
   text-align: center;
   margin-bottom: 42px;
 }
-
 .content-1 .container {
   width: 100%;
 }
-
 .content-1 .img-container {
   margin-bottom: 26px;
   width: 100%;
@@ -362,14 +367,12 @@ ul {
   padding: 22px;
   text-align: center;
 }
-
 .content-1 .text-container h3 {
   margin-bottom: 14px;
   font-size: 28px;
   padding: 0 8px;
   color: var(--headings);
 }
-
 .content-1 .text-container p {
   margin-bottom: 42px;
   font-size: 16px;
@@ -381,6 +384,8 @@ ul {
 .text-container * {
   width: 100%;
 }
+
+/* Content 2 */
 
 .content-2 {
   width: 100%;
@@ -398,7 +403,6 @@ ul {
   position: relative;
   margin-bottom: 60px;
 }
-
 .content-2 .pattern {
   width: 100%;
   height: 100%;
@@ -410,13 +414,11 @@ ul {
   border-radius: 0 100px 0 100px;
   overflow: hidden;
 }
-
 .content-2 .pattern img {
   width: 604px;
   position: relative;
   top: -242px;
 }
-
 .content-2 .img-container {
   position: absolute;
   top: -186px;
@@ -428,7 +430,6 @@ ul {
   width: 100%;
   max-width: 375px;
 }
-
 .content-2 .text-container {
   width: 100%;
   padding: 218px 22px 22px;
@@ -451,23 +452,22 @@ ul {
   line-height: 28px;
 }
 
+/* Content 3 */
+
 .content-3 {
   margin-bottom: 28px;
 }
-
 .content-3,
 .content-3 .img-container,
 .content-3 .text-container {
   width: 100%;
 }
-
 .content-3 .img-container {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
   overflow-x: hidden;
 }
-
 .content-3 .text-container {
   display: flex;
   flex-direction: column;
@@ -477,14 +477,12 @@ ul {
   font-family: var(--overpass);
   padding: 26px;
 }
-
 .content-3 .text-container h3 {
   margin-bottom: 24px;
   font-size: 28px;
   padding: 0 8px;
   color: var(--headings);
 }
-
 .content-3 .text-container p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -493,6 +491,7 @@ ul {
   line-height: 28px;
 }
 
+/* Footer */
 footer {
   width: 100%;
   background-color: var(--footer-bg);
@@ -515,9 +514,10 @@ footer {
   font-size: 18px;
   text-align: center;
   margin-bottom: 48px;
+  width: 80%;
 }
 
-.footer-menu li {
+.footer-menu .footer-menu-item {
   cursor: default;
 }
 
@@ -526,6 +526,7 @@ footer {
 }
 .footer-sub-menu li {
   padding: 6px;
+
   color: var(--footer-text);
   font-weight: 400;
   font-size: 18px;
@@ -534,6 +535,8 @@ footer {
 .footer-sub-menu li:hover {
   color: var(--white-text);
 }
+
+/* Attribution */
 
 .attribution {
   width: 100%;
@@ -544,16 +547,173 @@ footer {
   align-items: center;
   padding: 24px;
 }
-
 .attribution p {
   text-align: center;
   color: var(--white-text);
-  font-family: var(--overpass);
+  font-family: var(--ubuntu);
   padding: 6px;
+  cursor: default;
 }
-
 .attribution p a {
   color: var(--white-text);
-  font-family: var(--overpass);
+  font-family: var(--ubuntu);
   padding: 6px;
+  transition: color 0.2s ease-in-out;
+}
+.attribution p a:hover {
+  color: var(--cta-button-red);
+}
+
+/* Media Query */
+
+@media screen and (min-width: 961px) {
+  /* Intro */
+
+  .intro {
+    background: linear-gradient(
+      to right,
+      var(--cta-button-light-red),
+      var(--cta-button-red)
+    );
+  }
+  .start-pattern img {
+    top: -230%;
+    left: -33%;
+    height: 540%;
+  }
+
+  header {
+    padding: 48px 168px 64px;
+  }
+
+  .logo {
+    margin-right: 16px;
+  }
+  .logo img {
+    height: 84%;
+  }
+
+  nav {
+    position: static;
+    padding: 0;
+    overflow: visible;
+    padding-left: 24px;
+  }
+
+  /* Menu */
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+  }
+  .menu-buttons {
+    display: none;
+  }
+  .menu .menu-item {
+    position: relative;
+    width: min-content;
+    padding: 0 16px;
+  }
+
+  /* BTN Container */
+
+  .btn-container {
+    border: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: absolute !important;
+    right: 0;
+  }
+  .btn-container button {
+    margin: 0;
+    color: var(--white-text);
+    font-family: var(--ubuntu);
+    font-size: 16px;
+  }
+  .btn-container .cta {
+    background: var(--white-text);
+    color: var(--cta-button-red);
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .btn-container .cta:hover {
+    box-shadow: none;
+    background: var(--cta-hover-bg);
+    color: var(--white-text);
+  }
+  .btn-container .empty {
+    width: 116px;
+  }
+
+  /* Menu Link */
+
+  .menu-link {
+    height: 48px;
+  }
+  .menu-link h3 {
+    margin: 0;
+    color: var(--white-text);
+    font-family: var(--ubuntu);
+    font-size: 16px;
+    padding: 0 10px 0 0;
+  }
+  .menu-link .little-arrow {
+    border-right: 2px solid var(--white-text);
+    border-bottom: 2px solid var(--white-text);
+    top: -2px;
+  }
+  .menu-link.active h3 {
+    color: var(--white-text);
+    text-decoration: underline;
+  }
+  .menu-link.active .little-arrow {
+    top: 0;
+  }
+
+  /* Sub Menu */
+
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    width: 170px;
+    background-color: var(--white-text);
+    font-family: var(--ubuntu);
+    padding: 20px 0;
+    box-shadow: 0 16px 24px 0 var(--box-shadow);
+  }
+  .sub-menu li {
+    width: 100%;
+    text-align: left;
+    color: var(--body-gray-blue);
+    font-weight: 400;
+    padding-left: 24px;
+  }
+  .sub-menu li:hover {
+    color: var(--body-gray-blue);
+    font-weight: 500;
+  }
+
+  /* Initial Text*/
+  .initial-text h2 {
+    font-size: 64px;
+  }
+  .initial-text p {
+    font-size: 18px;
+  }
+
+  /* CTA Buttons*/
+
+  .cta-buttons {
+    padding: 0;
+  }
+  .cta-buttons button {
+    margin-top: 0;
+  }
 }

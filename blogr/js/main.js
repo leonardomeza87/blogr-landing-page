@@ -1,62 +1,42 @@
-const d = document;
+const d = document,
+  menuBtn = ".menu-buttons",
+  menu = ".menu",
+  menuLink = ".menu-link",
+  submenu = ".sub-menu",
+  btn = ".btn-container",
+  $menuBtn = d.querySelector(menuBtn),
+  $menu = d.querySelector(menu),
+  $icons = $menuBtn.querySelectorAll("img"),
+  $links = d.querySelectorAll(".menu-link");
 
-let isOpen = false;
+const closeLinks = (string) => {
+  $links.forEach((el) => {
+    if (el.getAttribute("data-menu") !== string) {
+      el.classList.remove("active");
+      el.nextElementSibling.classList.add("hidden");
+    }
+  });
+};
 
 d.addEventListener("click", (e) => {
   let t = e.target;
 
-  const menuBtn = ".menu-btn",
-    menu = ".menu",
-    menuLi = ".menu li",
-    $menuBtn = d.querySelector(menuBtn),
-    $menu = d.querySelector(menu);
-
   if (t.matches(menuBtn) || t.matches(`${menuBtn} *`)) {
-    console.log("a");
+    $menu.parentElement.classList.toggle("hidden-menu");
 
-    if (isOpen) {
-      isOpen = false;
-      $menu.classList.toggle("hidden-menu");
-    } else {
-      isOpen = true;
-      $menu.classList.toggle("hidden-menu");
-    }
-
-    let $icons = $menuBtn.querySelectorAll("img");
     $icons.forEach((el) => {
       el.classList.toggle("hidden");
     });
+
+    closeLinks(null);
   }
 
-  if (t.matches(menuLi) || t.matches(`${menuLi} *`)) {
-    console.log("b");
+  if (t.matches(menuLink) || t.matches(`${menuLink} * `)) {
+    let submenuSelected = t.getAttribute("data-menu");
 
-    console.log(t);
+    d.getElementById(`menu${submenuSelected}`).classList.toggle("hidden");
+    d.getElementById(`link${submenuSelected}`).classList.toggle("active");
 
-    let selectedMenu = t.getAttribute("data-menu");
-
-    if (selectedMenu === "0") {
-      d.getElementById("menu0").classList.toggle("hidden");
-      d.getElementById("link0").classList.toggle("active");
-    } else if (selectedMenu === "1") {
-      d.getElementById("menu1").classList.toggle("hidden");
-      d.getElementById("link1").classList.toggle("active");
-    } else if (selectedMenu === "2") {
-      d.getElementById("menu2").classList.toggle("hidden");
-      d.getElementById("link2").classList.toggle("active");
-    }
-    // if (isOpen) {
-    //   isOpen = false;
-    //   $menu.classList.toggle("hidden");
-    // } else {
-    //   isOpen = true;
-    //   $menu.classList.toggle("hidden");
-    // }
-
-    // let $icons = $menuBtn.querySelectorAll("img");
-
-    // $icons.forEach((el) => {
-    //   el.classList.toggle("hidden");
-    // });
+    closeLinks(submenuSelected);
   }
 });
