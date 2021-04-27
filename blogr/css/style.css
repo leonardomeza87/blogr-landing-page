@@ -329,8 +329,9 @@ ul {
   padding: 0 8px;
   font-weight: 600;
 }
-.initial-text p {
+.initial-text h3 {
   margin-top: 16px;
+  font-weight: 300;
   font-family: var(--overpass);
   color: var(--white-text);
   text-align: center;
@@ -771,7 +772,7 @@ footer {
   .initial-text h2 {
     font-size: 60px;
   }
-  .initial-text p {
+  .initial-text h3 {
     font-size: 18px;
   }
 
