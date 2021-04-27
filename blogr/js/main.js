@@ -1,3 +1,8 @@
+/*
+  - This page was made for the Frontend Mentor challenge (https://www.frontendmentor.io/?ref=challenge)
+  - Author: Leonardo Meza (https://github.com/leonardomeza87)
+  - Twitter: (https://twitter.com/leonardomeza87)
+*/
 const d = document,
   w = window,
   menuBtn = ".menu-buttons",
