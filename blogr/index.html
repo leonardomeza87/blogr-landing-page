@@ -34,57 +34,59 @@
         <img src="images/bg-pattern-intro.svg" alt="pattern" />
       </div>
       <header>
-        <div class="logo">
-          <img src="images/logo.svg" alt="logo" />
+        <div class="header">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+          <nav class="hidden-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <div class="menu-link" data-menu="0" id="link0">
+                  <h3 data-menu="0">Product</h3>
+                  <span class="little-arrow" data-menu="0"></span>
+                </div>
+                <ul class="sub-menu hidden" id="menu0">
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-link" data-menu="1" id="link1">
+                  <h3 data-menu="1">Company</h3>
+                  <span class="little-arrow" data-menu="1"></span>
+                </div>
+                <ul class="sub-menu hidden" id="menu1">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-link" data-menu="2" id="link2">
+                  <h3 data-menu="2">Connect</h3>
+                  <span class="little-arrow" data-menu="2"></span>
+                </div>
+                <ul class="sub-menu hidden" id="menu2">
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </li>
+              <li class="btn-container">
+                <button class="empty">Login</button>
+                <button class="cta">Sign Up</button>
+              </li>
+            </ul>
+          </nav>
+          <button class="menu-buttons">
+            <img src="images/icon-hamburger.svg" alt="open menu" />
+            <img class="hidden" src="images/icon-close.svg" alt="close menu" />
+          </button>
         </div>
-        <nav class="hidden-menuK">
-          <ul class="menu">
-            <li class="menu-item">
-              <div class="menu-link" data-menu="0" id="link0">
-                <h3 data-menu="0">Product</h3>
-                <span class="little-arrow" data-menu="0"></span>
-              </div>
-              <ul class="sub-menu hidden" id="menu0">
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <div class="menu-link" data-menu="1" id="link1">
-                <h3 data-menu="1">Company</h3>
-                <span class="little-arrow" data-menu="1"></span>
-              </div>
-              <ul class="sub-menu hidden" id="menu1">
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <div class="menu-link" data-menu="2" id="link2">
-                <h3 data-menu="2">Connect</h3>
-                <span class="little-arrow" data-menu="2"></span>
-              </div>
-              <ul class="sub-menu hidden" id="menu2">
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </ul>
-            </li>
-            <li class="btn-container">
-              <button class="empty">Login</button>
-              <button class="cta">Sign Up</button>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu-buttons">
-          <img src="images/icon-hamburger.svg" alt="open menu" />
-          <img class="hidden" src="images/icon-close.svg" alt="close menu" />
-        </button>
       </header>
 
       <div class="initial-text">
@@ -101,7 +103,16 @@
 
       <div class="container">
         <div class="img-container">
-          <img src="images/illustration-editor-mobile.svg" alt="" />
+          <img
+            class="mobile"
+            src="images/illustration-editor-mobile.svg"
+            alt=""
+          />
+          <img
+            class="desktop"
+            src="images/illustration-editor-desktop.svg"
+            alt=""
+          />
         </div>
         <div class="text-container">
           <h3>Introducing an extensible editor</h3>
@@ -143,7 +154,16 @@
     </section>
     <section class="content-3">
       <div class="img-container">
-        <img src="images/illustration-laptop-mobile.svg" alt="" />
+        <img
+          class="mobile"
+          src="images/illustration-laptop-mobile.svg"
+          alt=""
+        />
+        <img
+          class="desktop"
+          src="images/illustration-laptop-desktop.svg"
+          alt=""
+        />
       </div>
       <div class="text-container">
         <h3>Free, open, simple</h3>
@@ -177,7 +197,6 @@
           <li>Integrations</li>
         </ul>
       </ul>
-
       <ul class="footer-menu">
         <li class="footer-menu-item">Company</li>
         <ul class="footer-sub-menu">
@@ -201,10 +220,10 @@
         Challenge by:
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >.
+        >
       </p>
       <p>
-        Coded by: <a href="https://github.com/leonardomeza87">Leonardo Meza</a>.
+        Coded by: <a href="https://github.com/leonardomeza87">Leonardo Meza</a>
       </p>
     </div>
 
