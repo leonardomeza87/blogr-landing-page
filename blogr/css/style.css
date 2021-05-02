@@ -310,27 +310,22 @@ ul {
 
 /* Initial Text*/
 
-.initial-text {
+.intro h1 {
   width: 90%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  cursor: default;
-}
-.initial-text h2 {
   font-size: 36px;
   font-family: var(--overpass);
   color: var(--white-text);
   text-align: center;
+  margin-top: 40px;
   padding: 0 8px;
   font-weight: 600;
+  position: relative;
+  z-index: 100;
+  cursor: default;
 }
-.initial-text h3 {
-  margin-top: 16px;
+.intro h2 {
+  width: 90%;
+  margin: 14px 0 32px;
   font-weight: 300;
   font-family: var(--overpass);
   color: var(--white-text);
@@ -338,6 +333,9 @@ ul {
   padding: 0 24px;
   font-size: 16px;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 100;
+  cursor: default;
 }
 
 /* CTA Buttons*/
@@ -769,11 +767,13 @@ footer {
   }
 
   /* Initial Text*/
-  .initial-text h2 {
+  .intro h1 {
+    margin-top: 78px;
     font-size: 60px;
   }
-  .initial-text h3 {
+  .intro h2 {
     font-size: 18px;
+    margin-bottom: 48px;
   }
 
   /* CTA Buttons*/
@@ -942,7 +942,8 @@ footer {
 
   /* Initial Text*/
 
-  .initial-text h2 {
+  .intro h1 {
+    margin-top: 72px;
     font-size: 64px;
   }
 
