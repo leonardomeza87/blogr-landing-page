@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/leonardomeza87/frontend-mentor-challenges/tree/main/blogr)
-- Live Site URL: [GitHub Page](https://leonardomeza87.github.io/frontend-mentor-challenges/blogr/)
+- Solution URL: [GitHub Repository](https://github.com/leonardomeza87/blogr-landing-page)
+- Live Site URL: [GitHub Page](https://leonardomeza87.github.io/blogr-landing-page)
 
 ## My process
 
