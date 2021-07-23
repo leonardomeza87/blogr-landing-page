@@ -1,42 +1,25 @@
-# Frontend Mentor - Blogr landing page solution
+# Blogr landing page
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
 
-## Table of contents
+## Links 🔗
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+- Solution URL: [Repository](https://github.com/leonardomeza87/blogr-landing-page)
+- Live Site URL: [GitHub Pages](https://leonardomeza87.github.io/blogr-landing-page)
 
-## Overview
-
-### The challenge
+## The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-
-### Links
-
-- Solution URL: [GitHub Repository](https://github.com/leonardomeza87/blogr-landing-page)
-- Live Site URL: [GitHub Page](https://leonardomeza87.github.io/blogr-landing-page)
-
-## My process
+- View the optimal layout for the site depending on their device's screen size.
+- See hover states for all interactive elements on the page.
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox (I did not use Grid)
-- Mobile-first workflow
+- Semantic HTML5 markup.
+- CSS custom properties.
+- Flexbox (I did not use Grid).
+- Mobile-first workflow.
 
 ### What I learned
 
@@ -58,8 +41,17 @@ Something I want to improve soon is my CSS layout speed, and the ability to crea
 
 - [Font size display issue on Google Chrome for Android](https://stackoverflow.com/questions/59095113/font-size-display-issue-on-google-chrome-for-android) - This helped me solve my desktop view issue in Chrome for Android.
 
-## Author
+### More about me
 
-- Website - [XNOR](https://www.xnor.tk/)
 - Frontend Mentor - [@leonardomeza87](https://www.frontendmentor.io/profile/leonardomeza87)
-- Twitter - [@leonardomeza87](https://twitter.com/leonardomeza87)
+- Twitter - [@leonardomeza87](https://www.twitter.com/leonardomeza87)
+
+## Download ⚙️
+
+This project does not have any dependencies.
+
+To clone:
+
+```
+git clone https://github.com/leonardomeza87/blogr-landing-page.git
+```

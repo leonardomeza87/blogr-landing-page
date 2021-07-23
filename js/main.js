@@ -1,5 +1,5 @@
 /*
-  - This page was made for the Frontend Mentor challenge (https://www.frontendmentor.io/?ref=challenge)
+  - This page was made for the Frontend Mentor challenge (https://www.frontendmentor.io/solutions/i-made-the-blogr-page-without-using-grid-2iAEEohdD)
   - Author: Leonardo Meza (https://github.com/leonardomeza87)
   - Twitter: (https://twitter.com/leonardomeza87)
 */

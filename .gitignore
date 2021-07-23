@@ -16,3 +16,6 @@
 .prettierignore
 
 .zip
+
+# Frontend Mentor Stuff
+/references
